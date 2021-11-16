@@ -1,0 +1,10 @@
+num1 = int(input())
+set1 = set(map(int,input().split()))
+num2 = int(input())
+set2 = set(map(int,input().split()))
+x = set1.difference(set2)
+y = set2.difference(set1)
+res = x.union(y)
+new_res = sorted(res)
+for i in new_res:
+    print(i)
